@@ -1,10 +1,10 @@
 # Site settings
-title: BY Blog
+title: Blog
 SEOTitle: 湟的博客 | BY Blog
 header-img: img/post-bg-desk.jpg
 email: xsfenglong@gmail.com
 description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 湟的博客, Dictator, 逆行工程"
+keyword: "BY, BY Blog, 湟的博客, Dictator, 逆向工程"
 url: "http://qiubaiying.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/qiubaiying/qiubaiying.github.io.git" # you code repository
