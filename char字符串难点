@@ -1,0 +1,15 @@
+package com.xuetang.java.zuoye;
+//导入scanner工具，
+import java.util.Scanner;
+
+public class calccirclearea {
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		//难点:录入char类型
+		System.out.println("性别:");
+		//获得用户输入字符串的第一个字符  点就是一个空格 比如男性 输出的为男
+		char sex = input.next().charAt(0);
+		System.out.println("性别: " + sex);
+	}
+}
