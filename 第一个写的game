@@ -1,0 +1,19 @@
+
+/**
+ * 使用java打印角色信息
+ * @author sunguangyu
+ *
+ */
+public class HelloWorld {
+	/*
+	 * 多行注释
+	 */
+	public static void main(String[] args) {
+		//单行注释
+				System.out.println("索利达尔群星之怒");
+				System.out.println("已绑定\n唯一");
+				System.out.println("远程\t\t\t弓");
+				System.out.println("355 - 524伤害\t\t速度2.70");
+	}
+	
+}
