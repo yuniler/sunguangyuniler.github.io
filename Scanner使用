@@ -1,0 +1,16 @@
+package com.xuetang.java.zuoye;
+//导入scanner工具，
+import java.util.Scanner;
+
+public class calccirclearea {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		//需要用户手工输入
+		System.out.print("请输入圆的半径");
+		double radius = scanner.nextDouble();	//让用户输入
+		double area = 3.14 * radius *radius;
+		System.out.printf("圆面积为: %.2f\n", area);
+	}
+
+}
