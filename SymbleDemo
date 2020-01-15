@@ -1,0 +1,21 @@
+package chapter3;
+/**
+ * 运算符案例
+ * @author sunguangyu
+ *
+ */
+
+public class SymbleDemo {
+
+	public static void main(String[] args) {
+		int num1 = 5, num2 =2;
+		
+
+		
+		int result = num1 > num2 ? 90 :80;
+		
+		System.out.println(result);
+
+				
+	}
+}
