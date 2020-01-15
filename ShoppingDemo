@@ -1,0 +1,66 @@
+package chapter3;
+
+import java.util.Scanner;
+
+/**
+ * 计算最后应付金额
+ * @author sunguangyu
+ *
+ */
+public class ShoppingDemo {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		float price;	//商品总价
+		float price1, price2, price3;
+		int count;		//商品数量
+		double total;	//商品总价
+		float zhekou;	//折扣率
+		//1.让用户输入三种商品的单价和数量
+		System.out.println("请输入路易斯威登手表的单价: ");
+		price1 = price = input.nextFloat();
+		System.out.println("请输入商品的数量: ");
+		count = input.nextInt();
+		total = price * count;	//计算总价
+				
+		System.out.println("请输入爱马仕时尚休闲皮带的单价: ");
+		price2 = price = input.nextFloat();
+		System.out.println("请输入商品的数量: ");
+		count = input.nextInt();
+		total += price * count;
+		System.out.println("请输入香奈儿东方香水的单价: ");
+		price3 = price = input.nextFloat();
+		System.out.println("请输入商品的数量: ");
+		count = input.nextInt();
+		total += price * count;	//计算三种商品的累加总价
+		//2计算总价
+		//3是否打折
+		if(price1 > 5000 && price2 > 5000 && price3 > 5000 || total > 35000){
+			zhekou = 0.3f;
+			System.out.println("打3折！！");
+		}else{
+			zhekou = 0.8f;
+			System.out.println("打8折！！");
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+//		if(total >= 50000){
+	//		//打七折
+	//		total *= 0.7;		//total = total * 0.7
+//		}else{
+	//		total *= 0.9;
+//		}	
+		//4打印
+		System.out.printf("最终应支付的金额为: %.2f, total");
+				
+				
+				
+				
+	}
+
+}
