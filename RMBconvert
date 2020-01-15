@@ -1,0 +1,43 @@
+package chapter3;
+
+import java.util.Scanner;
+
+import com.sun.xml.internal.ws.api.pipe.NextAction;
+
+/**
+ * 给定钱数分成较小货币
+ * @author sunguangyu
+ *
+ */
+
+public class RMBconvert {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("请输入小钱钱数量:");
+		double money = input.nextDouble();
+		
+		//处理圆部分
+		int yuan = (int)money;
+		int numOfShiYuan = yuan /10;	//10圆纸币数量
+		int numOfWuYuan = yuan %10 / 5;	//5圆纸币数量
+		int numOfYiYuan = yuan %10 - 5;	//1圆纸币数量
+		//处理角部分
+		int jiao = ((int)(money * 10)) % 10;
+		int numOfWuJiao = jiao / 5;	//5角数量
+		int numOfYijiao = jiao - 5;		//1角数量
+		
+		System.out.println("10元纸币的数量: " + numOfShiYuan);
+		System.out.println("5元纸币的数量: " + numOfWuYuan + "\n1元纸币的数量: " + numOfYiYuan);
+		System.out.println("5角纸币的数量: " + numOfWuJiao);
+		System.out.println("1角纸币的数量: " + numOfYijiao);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
