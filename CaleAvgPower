@@ -1,0 +1,30 @@
+package chapter4;
+
+import java.util.Scanner;
+
+/**
+ * 	求游戏公会玩家的平均战斗力
+ * @author sunguangyu
+ *
+ */
+public class CalcAvgPower {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int power = 0;
+		int sum = 0;
+		double avg = 0;
+		for (int i = 0; i < 3; i++) {
+			System.out.print("请输入第" + (i + 1) + "位玩家的战斗力: ");
+			power = input.nextInt();
+			sum += power;
+		}
+		avg = sum / 3.0;System.out.printf("三位玩家的战斗力平均值: %.2f\n, avg");
+		
+			//以后学数组后，使用单独循环求战力之和
+			
+		
+		
+			
+	}
+
+}
