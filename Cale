@@ -1,0 +1,59 @@
+package chapter4;
+
+import java.util.Scanner;
+
+/**
+ * 实现简单的计算器功能
+ * @author sunguangyu
+ *
+ */
+public class Cale {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		double num1, num2, result; 		//俩个操作数，一个运算符
+		String op = "";		//初值为空字符
+		String choice = null;		//用户选择是否继续
+		do{
+			System.out.println("请输入两个操作数");
+			num1 = input.nextDouble();
+			num2 = input.nextDouble();
+			result = num1 + num2;
+			System.out.print("请输入运算符");
+			op = input.next();
+			switch (op) {
+			case "+" :
+				//System.out.println(num1 + op + num2 + (num1 + num2));
+				result = num1 + num2;
+				break;
+			case "-" :
+				result = num1 + num2;
+				break;
+			case "*" :
+				result = num1 +num2;
+				break;
+			case "/":
+				if(num2 == 0){
+					System.out.println("除数不能为0");
+					result = 0;
+				}
+				break;
+			case "%":
+				result = num1 % num2;
+				break;
+
+			default:
+				System.out.println("未知运算符，运算失败");
+				result = 0;
+				break;
+			}
+			
+			System.out.printf("%.2f %s %.2f = %.2f\n", num1, op, num2, result);	
+			System.out.println("是否继续计算？ (y/)");
+			choice = input.next();
+		}while("y".equalsIgnoreCase(choice));
+			
+		}
+		
+	}
+
+
