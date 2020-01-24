@@ -1,0 +1,40 @@
+package chapter6;
+
+import java.util.Scanner;
+
+public class SearchDemo {
+	public static void main(String[] args) {
+		int[] nums = new int[10];
+		for (int i = 0; i< nums.length; i++){
+			nums[i] = ((int)(Math.random() * 10000 %1001));
+		}
+		System.out.println("数组元素");
+		for (int i = 0; i <nums.length; i++){
+			System.out.print(nums[i] + ",");
+		}
+			System.out.println();
+			
+			
+			
+			System.out.print("请输入要查找的原元素");
+			int searchNum = new Scanner(System.in).nextInt();
+			int searchIndex = -1; //套路；一般要找的下标，初值为-1
+			for (int i = 0; i < nums.length; i++){
+				if(searchNum == nums[i]){
+					//System.out.println("找到了，下标为：" + i);
+					//找到后，记录要寻找元素的下标
+					searchIndex = i;
+					break;
+				}
+			}
+			if(searchIndex == -1){
+				System.out.println("很遗憾，没有找到这个元素！");
+			}else{
+		System.out.println("要找到的元素下标为；" + searchIndex );
+		
+			
+			
+	}
+
+	}
+}
